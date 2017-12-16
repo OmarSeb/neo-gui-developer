@@ -127,13 +127,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblParamList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 247</value>
-  </data>
-  <data name="lblParamList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>10, 175</value>
   </data>
   <data name="lblParamList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 24</value>
+    <value>77, 17</value>
   </data>
   <data name="lblParamList.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -151,7 +148,7 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;lblParamList.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lblAuthor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -160,13 +157,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblAuthor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 190</value>
-  </data>
-  <data name="lblAuthor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>33, 135</value>
   </data>
   <data name="lblAuthor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 24</value>
+    <value>50, 17</value>
   </data>
   <data name="lblAuthor.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -184,7 +178,7 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;lblAuthor.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lblVersion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -193,13 +187,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 135</value>
-  </data>
-  <data name="lblVersion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>31, 96</value>
   </data>
   <data name="lblVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 24</value>
+    <value>55, 17</value>
   </data>
   <data name="lblVersion.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -217,34 +208,31 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;lblVersion.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
-  <data name="txtName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 77</value>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 55</value>
   </data>
-  <data name="txtName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 23</value>
   </data>
-  <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 31</value>
-  </data>
-  <data name="txtName.TabIndex" type="System.Int32, mscorlib">
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;txtName.Name" xml:space="preserve">
-    <value>txtName</value>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
   </data>
-  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
     <value>tabInvoke</value>
   </data>
-  <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="lblName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -253,13 +241,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 80</value>
-  </data>
-  <data name="lblName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>38, 57</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>46, 17</value>
   </data>
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -277,34 +262,31 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
-  <data name="txtScriptHash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 22</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 16</value>
   </data>
-  <data name="txtScriptHash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
-  </data>
-  <data name="txtScriptHash.MaxLength" type="System.Int32, mscorlib">
+  <data name="textBox1.MaxLength" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="txtScriptHash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 31</value>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 23</value>
   </data>
-  <data name="txtScriptHash.TabIndex" type="System.Int32, mscorlib">
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;txtScriptHash.Name" xml:space="preserve">
-    <value>txtScriptHash</value>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
   </data>
-  <data name="&gt;&gt;txtScriptHash.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtScriptHash.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
     <value>tabInvoke</value>
   </data>
-  <data name="&gt;&gt;txtScriptHash.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="lblScriptHash.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -313,13 +295,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblScriptHash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 25</value>
-  </data>
-  <data name="lblScriptHash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>12, 18</value>
   </data>
   <data name="lblScriptHash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 24</value>
+    <value>73, 17</value>
   </data>
   <data name="lblScriptHash.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -337,7 +316,7 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;lblScriptHash.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="btnLoadAVM.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -346,13 +325,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnLoadAVM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>639, 538</value>
-  </data>
-  <data name="btnLoadAVM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>407, 381</value>
   </data>
   <data name="btnLoadAVM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 32</value>
+    <value>75, 23</value>
   </data>
   <data name="btnLoadAVM.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -370,16 +346,13 @@
     <value>tabCustom</value>
   </data>
   <data name="&gt;&gt;btnLoadAVM.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txtCustomScript.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="txtCustomScript.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 62</value>
-  </data>
-  <data name="txtCustomScript.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>5, 44</value>
   </data>
   <data name="txtCustomScript.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -388,7 +361,7 @@
     <value>Vertical</value>
   </data>
   <data name="txtCustomScript.Size" type="System.Drawing.Size, System.Drawing">
-    <value>749, 468</value>
+    <value>478, 283</value>
   </data>
   <data name="txtCustomScript.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -403,7 +376,7 @@
     <value>tabCustom</value>
   </data>
   <data name="&gt;&gt;txtCustomScript.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnInvoke.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -415,13 +388,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnInvoke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>926, 790</value>
-  </data>
-  <data name="btnInvoke.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>589, 560</value>
   </data>
   <data name="btnInvoke.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 32</value>
+    <value>75, 23</value>
   </data>
   <data name="btnInvoke.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -448,13 +418,10 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1054, 790</value>
-  </data>
-  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>671, 560</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 32</value>
+    <value>75, 23</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -484,13 +451,10 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 798</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>5, 565</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 24</value>
+    <value>31, 17</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -520,13 +484,10 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 798</value>
-  </data>
-  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>32, 565</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 24</value>
+    <value>87, 17</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -556,13 +517,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnTestScript.Location" type="System.Drawing.Point, System.Drawing">
-    <value>799, 790</value>
-  </data>
-  <data name="btnTestScript.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>508, 560</value>
   </data>
   <data name="btnTestScript.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 32</value>
+    <value>75, 23</value>
   </data>
   <data name="btnTestScript.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -588,32 +546,62 @@
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>AVM File|*.avm</value>
   </data>
-  <data name="txtParamList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txtParamList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 242</value>
+  <data name="button2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="txtParamList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="txtParamList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 31</value>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 171</value>
   </data>
-  <data name="txtParamList.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
   </data>
-  <data name="&gt;&gt;txtParamList.Name" xml:space="preserve">
-    <value>txtParamList</value>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;txtParamList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button2.Text" xml:space="preserve">
+    <value>...</value>
   </data>
-  <data name="&gt;&gt;txtParamList.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>tabInvoke</value>
   </data>
-  <data name="&gt;&gt;txtParamList.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="textBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 171</value>
+  </data>
+  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 23</value>
+  </data>
+  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
+    <value>textBox5</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+    <value>tabInvoke</value>
+  </data>
+  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnClearScript.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -625,13 +613,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnClearScript.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 476</value>
-  </data>
-  <data name="btnClearScript.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>356, 337</value>
   </data>
   <data name="btnClearScript.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 32</value>
+    <value>129, 23</value>
   </data>
   <data name="btnClearScript.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -649,7 +634,7 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;btnClearScript.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lblDescription.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -658,13 +643,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 300</value>
-  </data>
-  <data name="lblDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>10, 212</value>
   </data>
   <data name="lblDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 24</value>
+    <value>77, 17</value>
   </data>
   <data name="lblDescription.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -682,16 +664,13 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;lblDescription.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txtDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="txtDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 297</value>
-  </data>
-  <data name="txtDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>87, 210</value>
   </data>
   <data name="txtDescription.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -700,7 +679,7 @@
     <value>Vertical</value>
   </data>
   <data name="txtDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 173</value>
+    <value>367, 124</value>
   </data>
   <data name="txtDescription.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -715,61 +694,55 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;txtDescription.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="txtAuthor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="txtAuthor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 187</value>
-  </data>
-  <data name="txtAuthor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
-  </data>
-  <data name="txtAuthor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 31</value>
-  </data>
-  <data name="txtAuthor.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtAuthor.Name" xml:space="preserve">
-    <value>txtAuthor</value>
-  </data>
-  <data name="&gt;&gt;txtAuthor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAuthor.Parent" xml:space="preserve">
-    <value>tabInvoke</value>
-  </data>
-  <data name="&gt;&gt;txtAuthor.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txtVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="txtVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 132</value>
-  </data>
-  <data name="txtVersion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
-  </data>
-  <data name="txtVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 31</value>
-  </data>
-  <data name="txtVersion.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;txtVersion.Name" xml:space="preserve">
-    <value>txtVersion</value>
+  <data name="textBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;txtVersion.Type" xml:space="preserve">
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 132</value>
+  </data>
+  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 23</value>
+  </data>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
+    <value>textBox4</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtVersion.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
     <value>tabInvoke</value>
   </data>
-  <data name="&gt;&gt;txtVersion.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="textBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 93</value>
+  </data>
+  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 23</value>
+  </data>
+  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+    <value>tabInvoke</value>
+  </data>
+  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="btnScriptHashSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -778,13 +751,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnScriptHashSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>720, 22</value>
-  </data>
-  <data name="btnScriptHashSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>458, 16</value>
   </data>
   <data name="btnScriptHashSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 31</value>
+    <value>25, 22</value>
   </data>
   <data name="btnScriptHashSearch.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -799,16 +769,19 @@
     <value>tabInvoke</value>
   </data>
   <data name="&gt;&gt;btnScriptHashSearch.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="tabInvoke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
+    <value>4, 26</value>
+  </data>
+  <data name="tabInvoke.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tabInvoke.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tabInvoke.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 515</value>
+    <value>486, 361</value>
   </data>
   <data name="tabInvoke.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -828,17 +801,44 @@
   <data name="&gt;&gt;tabInvoke.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txtCustomScriptHash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 7</value>
+  <data name="button6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
-  <data name="txtCustomScriptHash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 333</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button6.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>tabCustom</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCustomScriptHash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 5</value>
   </data>
   <data name="txtCustomScriptHash.MaxLength" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="txtCustomScriptHash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>574, 31</value>
+    <value>367, 23</value>
   </data>
   <data name="txtCustomScriptHash.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -853,7 +853,7 @@
     <value>tabCustom</value>
   </data>
   <data name="&gt;&gt;txtCustomScriptHash.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -862,13 +862,10 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 10</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>5, 7</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 24</value>
+    <value>73, 17</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -886,16 +883,19 @@
     <value>tabCustom</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tabCustom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
+    <value>4, 26</value>
+  </data>
+  <data name="tabCustom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tabCustom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tabCustom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 577</value>
+    <value>486, 361</value>
   </data>
   <data name="tabCustom.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -916,10 +916,13 @@
     <value>1</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>8, 8</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 552</value>
+    <value>494, 391</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -943,10 +946,13 @@
     <value>False</value>
   </data>
   <data name="txtCustomScriptCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 571</value>
+    <value>10, 404</value>
+  </data>
+  <data name="txtCustomScriptCopy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtCustomScriptCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1146, 31</value>
+    <value>731, 23</value>
   </data>
   <data name="txtCustomScriptCopy.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -964,10 +970,13 @@
     <value>3</value>
   </data>
   <data name="treeParamList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 28</value>
+    <value>5, 20</value>
+  </data>
+  <data name="treeParamList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="treeParamList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 515</value>
+    <value>226, 366</value>
   </data>
   <data name="treeParamList.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -985,16 +994,10 @@
     <value>0</value>
   </data>
   <data name="paramListViewGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>801, 17</value>
-  </data>
-  <data name="paramListViewGroup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
-  </data>
-  <data name="paramListViewGroup.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 4, 5, 4</value>
+    <value>510, 12</value>
   </data>
   <data name="paramListViewGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>369, 547</value>
+    <value>235, 387</value>
   </data>
   <data name="paramListViewGroup.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1018,19 +1021,19 @@
     <value>211, 17</value>
   </metadata>
   <data name="menuItemEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 30</value>
+    <value>117, 22</value>
   </data>
   <data name="menuItemEdit.Text" xml:space="preserve">
     <value>Edit</value>
   </data>
   <data name="menuItemRemove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 30</value>
+    <value>117, 22</value>
   </data>
   <data name="menuItemRemove.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
   <data name="menuParamListViewItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 64</value>
+    <value>118, 48</value>
   </data>
   <data name="&gt;&gt;menuParamListViewItem.Name" xml:space="preserve">
     <value>menuParamListViewItem</value>
@@ -1039,13 +1042,16 @@
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtInvokeOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 608</value>
+    <value>10, 431</value>
+  </data>
+  <data name="txtInvokeOutput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtInvokeOutput.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtInvokeOutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1146, 175</value>
+    <value>731, 125</value>
   </data>
   <data name="txtInvokeOutput.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1066,7 +1072,7 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>11, 24</value>
+    <value>7, 17</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1075,16 +1081,16 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1181, 831</value>
+    <value>752, 589</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 6, 5, 6</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
