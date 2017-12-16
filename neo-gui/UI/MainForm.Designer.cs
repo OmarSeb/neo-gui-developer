@@ -37,7 +37,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.修改密码CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重建钱包数据库RToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restoreAccountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.退出XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.交易TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,9 +78,9 @@
             this.importWatchOnlyAddressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.创建智能合约SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.多方签名MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.自定义CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.自定义CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.查看私钥VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -122,11 +121,12 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.eventLogMessageType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.CopySHtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CopyMessagetoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventLogMessageType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.restoreAccountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -193,12 +193,6 @@
             resources.ApplyResources(this.重建钱包数据库RToolStripMenuItem, "重建钱包数据库RToolStripMenuItem");
             this.重建钱包数据库RToolStripMenuItem.Name = "重建钱包数据库RToolStripMenuItem";
             this.重建钱包数据库RToolStripMenuItem.Click += new System.EventHandler(this.重建钱包数据库RToolStripMenuItem_Click);
-            // 
-            // restoreAccountsToolStripMenuItem
-            // 
-            resources.ApplyResources(this.restoreAccountsToolStripMenuItem, "restoreAccountsToolStripMenuItem");
-            this.restoreAccountsToolStripMenuItem.Name = "restoreAccountsToolStripMenuItem";
-            this.restoreAccountsToolStripMenuItem.Click += new System.EventHandler(this.restoreAccountsToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -333,8 +327,8 @@
             // 
             // optionsToolStripMenuItem
             // 
-            resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            resources.ApplyResources(this.optionsToolStripMenuItem, "optionsToolStripMenuItem");
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // 帮助HToolStripMenuItem
@@ -796,7 +790,6 @@
             this.CopySHtoolStripMenuItem,
             this.CopyMessagetoolStripMenuItem});
             this.contextMenuStrip4.Name = "contextMenuStrip4";
-            resources.ApplyResources(this.contextMenuStrip4, "contextMenuStrip4");
             // 
             // CopySHtoolStripMenuItem
             // 
@@ -810,9 +803,10 @@
             resources.ApplyResources(this.CopyMessagetoolStripMenuItem, "CopyMessagetoolStripMenuItem");
             this.CopyMessagetoolStripMenuItem.Click += new System.EventHandler(this.CopyMessagetoolStripMenuItem_Click);
             // 
-            // eventLogMessageType
+            // restoreAccountsToolStripMenuItem
             // 
-            resources.ApplyResources(this.eventLogMessageType, "eventLogMessageType");
+            resources.ApplyResources(this.restoreAccountsToolStripMenuItem, "restoreAccountsToolStripMenuItem");
+            this.restoreAccountsToolStripMenuItem.Name = "restoreAccountsToolStripMenuItem";
             // 
             // MainForm
             // 
@@ -837,8 +831,10 @@
             this.tabPage3.ResumeLayout(false);
             this.contextMenuStrip3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -913,7 +909,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem restoreAccountsToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripMenuItem requestCertificateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewCertificateToolStripMenuItem;
@@ -940,6 +935,7 @@
         private System.Windows.Forms.ToolStripMenuItem lockToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripMenuItem listContractsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restoreAccountsToolStripMenuItem;
     }
 }
 

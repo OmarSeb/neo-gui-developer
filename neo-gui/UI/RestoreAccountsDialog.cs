@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Neo.Implementations.Wallets.EntityFramework;
 
 namespace Neo.UI
 {
@@ -20,13 +21,16 @@ namespace Neo.UI
 
         private void RestoreAccountsDialog_Load(object sender, EventArgs e)
         {
-            IEnumerable<KeyPair> keys = Program.CurrentWallet.GetKeys();
-            keys = keys.Where(account => Program.CurrentWallet.GetContracts(account.PublicKeyHash).All(contract => !contract.IsStandard));
-            IEnumerable<VerificationContract> contracts = keys.Select(p => VerificationContract.CreateSignatureContract(p.PublicKey));
-            listView1.Items.AddRange(contracts.Select(p => new ListViewItem(p.Address)
-            {
-                Tag = p
-            }).ToArray());
+            // NEP6 Equivalent not found
+            // Cannot find Program.CurrentWallet.GetKeys();
+
+            //IEnumerable<KeyPair> keys = Program.CurrentWallet.GetKeys();
+            //keys = keys.Where(account => Program.CurrentWallet.GetContracts(account.PublicKeyHash).All(contract => !contract.IsStandard));
+            //IEnumerable<VerificationContract> contracts = keys.Select(p => VerificationContract.CreateSignatureContract(p.PublicKey));
+            //listView1.Items.AddRange(contracts.Select(p => new ListViewItem(p.Address)
+            //{
+            //    Tag = p
+            //}).ToArray());
         }
 
         private void listView1_ItemChecked(object sender, ItemCheckedEventArgs e)

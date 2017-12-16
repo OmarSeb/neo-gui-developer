@@ -16,8 +16,8 @@ namespace Neo.UI
 {
     internal partial class InvokeContractDialog : Form
     {
-        private List<ContractParameter> requiredParameters = new List<ContractParameter>();         // required params defined by the smartcontract
-        private TreeNode targetTreeNode;                                                            // target tree node to add new params 
+        private TreeNode targetTreeNode;
+        private List<ContractParameter> parameters;// target tree node to add new params 
 
         private InvocationTransaction tx;
         private UInt160 scriptHash;
@@ -32,6 +32,7 @@ namespace Neo.UI
             if (tx != null)
             {
                 // transaction will be supplied when being called from another dialog such as deploy contract
+                button6.Text = tx.Script.ToHexString();
                 tabControl1.SelectedTab = tabCustom;
                 txtCustomScriptHash.Text = deployedScriptHash;
                 txtCustomScript.Text = tx.Script.ToHexString();
@@ -53,12 +54,34 @@ namespace Neo.UI
             }, fee: fee);
         }
 
-        private enum ScriptPackMethods
+
+        public InvocationTransaction GetTransaction(UInt160 change_address, Fixed8 fee)
         {
-            EmitAppCall,
-            EmitOpCodePack,
-            NoAction
+            return Program.CurrentWallet.MakeTransaction(new InvocationTransaction
+            {
+                Version = tx.Version,
+                Script = tx.Script,
+                Gas = tx.Gas,
+                Attributes = tx.Attributes,
+                Inputs = tx.Inputs,
+                Outputs = tx.Outputs
+            }, change_address, fee);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            scriptHash = UInt160.Parse(textBox1.Text);
+            ContractState contract = Blockchain.Default.GetContract(scriptHash);
+            if (contract == null) return;
+            parameters = contract.ParameterList.Select(p => new ContractParameter(p)).ToList();
+            textBox2.Text = contract.Name;
+            textBox3.Text = contract.CodeVersion;
+            textBox4.Text = contract.Author;
+            textBox5.Text = string.Join(", ", contract.ParameterList);
+            button2.Enabled = parameters.Count > 0;
+            UpdateScript();
+        }
+
         /**
          * script has changed, update the bytecode
          */
@@ -69,22 +92,21 @@ namespace Neo.UI
             // highlight any required fields that aren't valid
             testRequiredParameterValidity();
 
+            if (parameters.Any(p => p.Value == null)) return;
             using (ScriptBuilder sb = new ScriptBuilder())
             {
-                
-                PushParameters(sb, requiredParameters);
-                sb.EmitAppCall(scriptHash.ToArray(), false);
-                
-//                sb.EmitAppCall(scriptHash.ToArray(), requiredParameters);
+                PushParameters(sb, parameters);
+                sb.EmitAppCall(scriptHash, parameters.ToArray());
+                button6.Text = sb.ToArray().ToHexString();
                 txtCustomScript.Text = sb.ToArray().ToHexString();
-                //txtCustomScript.Text = txtCustomScript.Text;
             }
             txtCustomScriptCopy.Text = txtCustomScript.Text;
         }
 
+   
         private void BuildRequiredParameterCollection()
         {
-            requiredParameters = BuildRequiredParameterCollectionArray(treeParamList.Nodes[0]);
+            parameters = BuildRequiredParameterCollectionArray(treeParamList.Nodes[0]);
         }
 
         private List<ContractParameter> BuildRequiredParameterCollectionArray(TreeNode nodeArray)
@@ -164,9 +186,9 @@ namespace Neo.UI
          */
         private void ClearScriptDetails()
         {
-            txtName.Text = txtVersion.Text = txtAuthor.Text = txtDescription.Text = txtParamList.Text = txtCustomScript.Text = txtCustomScriptCopy.Text = "";
-            txtScriptHash.ForeColor = Color.Empty;
-            requiredParameters = new List<ContractParameter>();
+            textBox2.Text = textBox3.Text = textBox4.Text = txtDescription.Text = textBox5.Text = txtCustomScript.Text = txtCustomScriptCopy.Text = "";
+            textBox1.ForeColor = Color.Empty;
+            parameters = new List<ContractParameter>();
             numRequiredParameters = 0;
             treeParamList.Nodes.Clear();
         }
@@ -174,45 +196,45 @@ namespace Neo.UI
         /**
          * the value of scripthash has changed - attempt to evaluate and display contract details
          */
-        private void txtScriptHash_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
             ClearScriptDetails();
 
-            if (txtScriptHash.Text.Trim().Equals(""))
+            if (textBox1.Text.Trim().Equals(""))
             {
                 // no scripthash has been provided - clenup just in case previous script values are still showing
                 return;
             }
 
-            if (!UInt160.TryParse(txtScriptHash.Text, out UInt160 parsedHash))
+            if (!UInt160.TryParse(textBox1.Text, out UInt160 parsedHash))
             {
                 // invalid script hash, reset script details form and highlight field with red text
-                txtScriptHash.ForeColor = Color.Red;
+                textBox1.ForeColor = Color.Red;
                 return;
             }
 
             scriptHash = parsedHash;
-            txtScriptHash.ForeColor = Color.Empty;
+            textBox1.ForeColor = Color.Empty;
 
             ContractState contract = Blockchain.Default.GetContract(scriptHash);
             if (contract == null) return;
 
             // valid script hash was found on blockchain
-            requiredParameters.AddRange(contract.ParameterList.Select(p => new ContractParameter { Type = p }));
-            requiredParameters.Add(new ContractParameter { Type = ContractParameterType.Array, Value = new List<ContractParameter>() });
-            numRequiredParameters = requiredParameters.Count - 1;
+            parameters.AddRange(contract.ParameterList.Select(p => new ContractParameter { Type = p }));
+            parameters.Add(new ContractParameter { Type = ContractParameterType.Array, Value = new List<ContractParameter>() });
+            numRequiredParameters = parameters.Count - 1;
 
             // populate contract details to form
-            txtName.Text = contract.Name;
-            txtVersion.Text = contract.CodeVersion;
-            txtAuthor.Text = contract.Author;
+            textBox2.Text = contract.Name;
+            textBox3.Text = contract.CodeVersion;
+            textBox4.Text = contract.Author;
             if (!contract.Email.Trim().Equals(""))
             {
                 // append email address to author field
-                txtAuthor.Text += $" ({contract.Email})";
+                textBox4.Text += $" ({contract.Email})";
             }
             txtDescription.Text = contract.Description;
-            txtParamList.Text = string.Join(", ", contract.ParameterList);
+            textBox5.Text = string.Join(", ", contract.ParameterList);
 
             // show any required parameters for this contract
             InitParmTreeView();
@@ -236,7 +258,7 @@ namespace Neo.UI
             MainForm.Instance.scList.ShowDialog();
 
             ClearScriptDetails();
-            txtScriptHash.Text = MainForm.Instance.scList.selectedScriptHash;
+            textBox1.Text = MainForm.Instance.scList.selectedScriptHash;
         }
 
         /**
@@ -303,7 +325,7 @@ namespace Neo.UI
                 {
                     break;
                 }
-                bool parameterValid = requiredParameters[i].Value != null;
+                bool parameterValid = parameters[i].Value != null;
                 btnTestScript.Enabled = parameterValid;
                 btnInvoke.Enabled = parameterValid;
                 treeParamList.Nodes[0].Nodes[i].ForeColor = parameterValid ? Color.Empty : Color.Red;
@@ -375,7 +397,7 @@ namespace Neo.UI
             treeParamList.Nodes.Add(new TreeNode(Strings.InvokeContractParamList));
 
             targetTreeNode = treeParamList.Nodes[0];
-            targetTreeNode.Nodes.AddRange(requiredParameters.Select((p, i) => CreateTreeNode(p, RequiredParameters.Required)).ToArray());
+            targetTreeNode.Nodes.AddRange(parameters.Select((p, i) => CreateTreeNode(p, RequiredParameters.Required)).ToArray());
             treeParamList.ExpandAll();
 
             testRequiredParameterValidity();
