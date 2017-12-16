@@ -612,7 +612,7 @@ namespace Neo.UI
 
         private void restoreAccountsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // NEP6 equivalent missing
+            // NEP6 Equivalent not found
             // Cannot find CurrentWallet.AddContract()
 
             //using (RestoreAccountsDialog dialog = new RestoreAccountsDialog())
